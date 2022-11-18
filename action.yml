@@ -36,7 +36,7 @@ outputs:
     description: "The rounded calculated coverage value for display purposes."
   coverage-acceptable:
     description: "The true or false value of the check result."
-#runs:
+runs:
   using: "docker"
   #image: "docker://johanvanhelden/gha-clover-test-coverage-check:v1"
   image: "Dockerfile"

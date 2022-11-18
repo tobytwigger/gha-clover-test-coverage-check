@@ -37,12 +37,12 @@ outputs:
   coverage-acceptable:
     description: "The true or false value of the check result."
 #runs:
-  #using: "docker"
+  using: "docker"
   #image: "docker://johanvanhelden/gha-clover-test-coverage-check:v1"
-  #image: "Dockerfile"
-  #args:
-  #  - ${{ inputs.filename }}
-  #  - ${{ inputs.percentage }}
-  #  - ${{ inputs.rounded-precision }}
-  #  - ${{ inputs.exit }}
-  #  - ${{ inputs.metric }}
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.filename }}
+    - ${{ inputs.percentage }}
+    - ${{ inputs.rounded-precision }}
+    - ${{ inputs.exit }}
+    - ${{ inputs.metric }}

@@ -43,6 +43,8 @@ $isAcceptable = Coverage::isAcceptable($coverage, $percentage);
 
 echo Output::message($coverageDisplay, $percentage, $isAcceptable);
 
+echo "SELECTED_COLOR=green" >> $GITHUB_OUTPUT
+
 echo Output::gitHub('coverage', (string) $coverage);
 echo Output::gitHub('coverage-display', (string) $coverageDisplay);
 
